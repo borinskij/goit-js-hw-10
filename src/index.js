@@ -32,7 +32,7 @@ function getCounrtyData(event) {
 function markupCoutries(coutryData) {
     const markup = coutryData.map(element =>
     { return`<div><li><img src=${element.flags.svg } alt= flags width= '100'</li><h4>${element.name.official}</h4></div>`;
-    })
+    }).join(' ')
     markupRef.innerHTML = markup;
 } 
 
